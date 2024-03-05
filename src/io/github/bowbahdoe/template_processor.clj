@@ -134,7 +134,7 @@ simple values; the latter can be used to
 embed the results of arbitrary function invocation into the produced StringTemplate.
 
 Examples:
-user=> (require '[dev.mccue.template-processor :as template-processor :refer [<<]])
+user=> (require '[io.github.bowbahdoe.template-processor :as template-processor :refer [<<]])
 nil
 user=> (def v 30.5)
 #'user/v

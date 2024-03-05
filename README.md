@@ -17,7 +17,7 @@ how the template will be processed and a string literal
 that will be scanned for replacements.
 
 ```clojure
-=> (require '[dev.mccue.template-processor 
+=> (require '[io.github.bowbahdoe.template-processor 
               :as template-processor
               :refer [<<]])
 nil
