@@ -154,6 +154,5 @@ escaped."
   [processor template-string]
   (when-not (string? template-string)
     (throw (RuntimeException. "Template String must be string literal")))
-  (let [indent-stripped (.stripIndent ^String template-string)]
-    `(let [template# ~(produce-string-template indent-stripped)]
-       (process ~processor template#))))
+  `(let [template# ~(produce-string-template template-string)]
+     (process ~processor template#)))
