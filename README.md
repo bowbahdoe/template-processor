@@ -6,7 +6,7 @@ This library provides equivalent functionality to
 ## Dependency Info
 
 ```clojure
-io.github.bowbahdoe/template-processor {:git/sha "e2680671349f3692addf100811f7595106d783b6"}
+io.github.bowbahdoe/template-processor {:git/sha "223b55446a42d1ae0883ae01debad6a1a659872c"}
 ```
 
 ## How to Use
