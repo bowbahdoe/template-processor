@@ -27,6 +27,8 @@ nil
 "Hello bobbie"
 => (<< template-processor/str "Len: ~(.length name)")
 "Len: 6"
+=> (<< template-processor/sqlvec "SELECT * FROM table WHERE name=~{name}")
+["SELECT * FROM table WHERE name=?" "bobbie"]
 ```
 
 `~{}` is used for substituting constant values, `~()` for full expressions.
