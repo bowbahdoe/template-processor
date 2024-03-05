@@ -1,4 +1,4 @@
-(ns dev.mccue.template-processor
+(ns io.github.bowbahdoe.template-processor
   (:require [clojure.string :as string])
   (:import (clojure.lang IFn IPersistentMap))
   (:refer-clojure :exclude [str]))
