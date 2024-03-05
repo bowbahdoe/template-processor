@@ -5,6 +5,21 @@
 
 (set! *warn-on-reflection* true)
 
+;; Interpolate code taken from clojure.core.strint
+;;
+;; originally proposed/published at http://cemerick.com/2009/12/04/string-interpolation-in-clojure/
+
+;; by Chas Emerick <cemerick@snowtide.com>
+;; December 4, 2009
+
+;; Copyright (c) Chas Emerick, 2009. All rights reserved. The use
+;; and distribution terms for this software are covered by the Eclipse
+;; Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+;; which can be found in the file epl-v10.html at the root of this
+;; distribution. By using this software in any fashion, you are
+;; agreeing to be bound by the terms of this license. You must not
+;; remove this notice, or any other, from this software.
+
 (defn- silent-read
   "Attempts to clojure.core/read a single form from the provided String, returning
   a vector containing the read form and a String containing the unread remainder
