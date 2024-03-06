@@ -138,6 +138,18 @@ into multiple placeholders and multiple elements in the resulting vector."
                            v
                            [v]))
                        values)))))
+(defn raw
+  "Template processor which returns a \"raw\" template.
+
+This will be a map with :fragments and :values vectors. This is
+usable with this library since such a map would work as an implementation
+of the StringTemplate protocol.
+
+If you want something compatible with Java StringTemplate$Processor,
+use StringTemplate/RAW instead."
+  [template]
+  {:fragments (fragments template)
+   :values (values template)})
 
 (defmacro <<
   "Takes a template processor and a string literal, interprets the string literal as
