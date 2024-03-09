@@ -3,6 +3,10 @@
 This library provides equivalent functionality to
 `java.lang.StringTemplate`.
 
+**NOTE**: The underlying design of string templates seems [set to change](https://mail.openjdk.org/pipermail/amber-spec-experts/2024-March/004010.html)
+and explicit template processors will probably go away. I'll try to update this once a JDK with those changes lands so the `<<` macro will still function once/if the `StringTemplate$Processor`
+interface goes away.
+
 ## Dependency Info
 
 ```clojure
